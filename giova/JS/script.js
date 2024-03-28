@@ -12,8 +12,9 @@ btnInserisci.addEventListener("click",function () {
         alert("inserisci le cose correttamente!")
     }else{
         
-        listaTask.innerHTML=`${task.value}`;
+        listaTask.innerHTML=`<li>${task.value} ${data.value}</li>`;
         task.value="";
+
     }
     
 })
